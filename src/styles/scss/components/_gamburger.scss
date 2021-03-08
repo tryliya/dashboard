@@ -1,0 +1,34 @@
+.gamburger {
+    position: fixed;
+    display: none;
+    top: 25px;
+    right: 15px;
+    width: 50px;
+    height: 5px;
+    background-color: #7F7FD5;
+    border-radius: 3px;
+}
+
+.gamburger::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: translateY(-10px);
+   width: 50px;
+   height: 5px;
+   background-color: #7F7FD5;
+   border-radius: 3px;
+}
+
+.gamburger::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: translateY(10px);
+   width: 50px;
+   height: 5px;
+   background-color: #7F7FD5;
+   border-radius: 3px;
+}

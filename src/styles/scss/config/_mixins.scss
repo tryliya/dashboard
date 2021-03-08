@@ -1,0 +1,13 @@
+
+@mixin h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: $title-color;    
+}
+
+
+@mixin subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: $title-color;    
+}

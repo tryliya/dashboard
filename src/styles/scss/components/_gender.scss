@@ -1,0 +1,15 @@
+.gender {
+    grid-area: gender;
+    height: 200px;
+    padding: 1em;
+    background-color:#FDFDFF;
+    border-radius: 13px;
+    border: 1px solid #EBEBEB;   
+}
+
+.gender__wrap {
+    display: flex;
+}
+.gender__title {
+    @include h2;
+}

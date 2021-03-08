@@ -1,0 +1,16 @@
+.geo {
+    grid-area: geo;
+    height: 242px;
+    background-color: #FDFDFF;
+    border-radius: 13px;
+    border: 1px solid #EBEBEB;
+    
+}
+
+.geo__title {
+    @include h2;
+}
+
+.geo__graph {
+    width: 85%;
+}

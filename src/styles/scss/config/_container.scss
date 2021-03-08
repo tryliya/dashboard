@@ -1,0 +1,15 @@
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    // grid-template-rows: 30px 100px repeat(2, 242px);
+    grid-template-areas: "header header header" "left center right" "audience audience reach" "gender gender geo";
+    grid-column-gap: 32px;       
+    align-items: center;
+    justify-content: center;
+    width: 1087px;
+    height: 100%;
+       
+    
+}

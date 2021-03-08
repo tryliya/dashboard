@@ -1,0 +1,13 @@
+.reach {
+    grid-area: reach;
+    height: 242px;
+    padding-left: 7px;
+    background-color:#FDFDFF;    
+    border-radius: 13px;
+    border: 1px solid #EBEBEB;
+    
+}
+
+.reach__title {
+    @include h2;
+}

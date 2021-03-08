@@ -1,0 +1,131 @@
+
+.nav {
+    display: grid;
+    grid-template-columns: 80px;
+    grid-template-rows: 1fr repeat(7, 80px) 1fr;
+
+    height: 880px;
+    width: 80px;
+    border-radius: 13px 0 0 13px;
+    border: 1px solid #EBEBEB;
+    background-color: #FDFDFF;
+}
+
+.nav__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.nav__link:first-child,
+.nav__link:last-child{
+    height: 80px;
+    width: 100%;
+}
+
+.nav__link:last-child{
+    align-self: flex-end;
+}
+
+
+svg{
+    fill: #DFE6F1;
+    transition: fill ease .5s;
+}
+
+.nav__link:before{
+    visibility: hidden;
+    opacity: 0;
+    content: '';
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    width: 4px;
+    height: 50px;
+    background-color: #7F7FD5;
+    border-radius: 0 5px 5px 0;
+
+    transition: all ease .5s;
+}
+
+.nav__link:hover:before {
+    visibility: visible;
+    opacity: 1;
+    background-color: #7F7FD5;
+}
+
+.nav__link:hover {
+    svg {
+    fill: #7F7FD5;
+    }
+}
+
+.nav__image--logo {
+            width: 42px;
+            height: 24px;
+}
+
+.nav__link--statistics {
+    fill: #DFE6F1;
+}
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+  }
+  
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background: url(./../../images/Luna.png) no-repeat center #7F7FD5;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #7F7FD5;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+   .slider.round {
+    border-radius: 34px;
+    border: 0.5px solid #4F4F4F;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }  

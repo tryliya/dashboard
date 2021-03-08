@@ -1,0 +1,119 @@
+@media screen and (max-width: 1280px) {
+    .wrap__img {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 992px) {}
+
+
+@media screen and (max-width: 768px) {
+   .wrap {
+       height: 100%;
+       width: 100%;
+   }
+
+   .nav {
+       grid-area: nav;
+       grid-template-columns: 1fr repeat(7, 80px) 1fr;
+       grid-template-rows: 80px;
+       height: 80px;
+       width: 100%;
+   }
+   
+    .app {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 95%, 5%;
+        grid-template-areas: 'app' 'nav';
+        width: 100%;
+        height: 1400px;
+        margin: 0 auto;
+        
+    }
+    .container {
+        grid-area: app;
+        grid-template-columns:repeat(2, 45%);
+        grid-template-areas:'left header' 
+                            'center reach'
+                            'right geo'
+                            'audience audience'
+                            'gender gender';
+        grid-template-rows: 80px, repeat(5, 161px);
+        grid-gap: 1em;
+        width: 100%;
+        height: 100%;
+        padding-top: 1em;
+    }
+    .header {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 45%;
+        height: 161px;        
+    }
+
+    .card {
+        height: 161px;
+    }
+
+    .audience, .gender {
+        height: 161px;
+    }
+
+}
+
+
+@media screen and (max-width: 568px) {
+    .nav {
+        display: none;
+    }
+    .gamburger {
+        display: block;
+    }
+
+    .app {
+        width: 100%;
+        height: 1800px;
+        margin: 0 auto;        
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:'header' 'left' 'center' 'right' 'audience' 'reach' 'gender''geo';
+        width: 95%;
+        height: 100%;
+        grid-gap: 0;
+        padding-top: 0;
+    }
+
+    .card__actions {
+        width: 100px;
+    }
+
+    .card__actions::before {
+        transform: translateX(125px);
+    }
+    .card__actions::after {
+        transform: translateX(110px);
+    }
+
+    .audience {
+        .audience__graph {
+            width: 90;
+        }
+
+    }
+    .gender {
+        .gender__graph {
+            width: 90%;
+        }
+    }
+    .geo {
+        .geo__graph {
+            width: 85%;
+        }
+    }
+
+    
+}
